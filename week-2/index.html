@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Student Registration Form</h1>
+    <form class="registration-form">
+      <label>Full Name:</label>
+      <input type="text" name="name" placeholder="Enter your name" required />
+
+      <label>Roll Number:</label>
+      <input type="text" name="roll" placeholder="Enter roll number" required />
+      <label>Department:</label>
+      <input type="text" name="department" placeholder="e.g. CSE" required />
+      <label>Semester:</label>
+      <select name="semester">
+        <option>1st</option>
+        <option>2nd</option>
+        <option>3rd</option>
+        <option>4th</option>
+        <option>5th</option>
+        <option>6th</option>
+        <option>7th</option>
+        <option>8th</option>
+      </select>
+      <label>Email Address:</label>
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+      <label>Gender:</label>
+      <div class="gender">
+        <input type="radio" name="gender" value="Male" /> Male
+        <input type="radio" name="gender" value="Female" /> Female
+        <input type="radio" name="gender" value="Other" /> Other
+      </div>
+      <label>Date of Birth:</label>
+      <input type="date" name="dob" />
+      <button type="submit">Submit</button>
+    </form>
+    <h2>Registered Students</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Roll</th>
+          <th>Department</th>
+          <th>Semester</th>
+          <th>Email</th>
+          <th>Gender</th>
+          <th>DOB</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rahim Ahmed</td>
+          <td>2025001</td>
+          <td>CSE</td>
+          <td>5th</td>
+          <td>rahim@example.com</td>
+          <td>Male</td>
+          <td>2002-07-15</td>
+        </tr>
+        <tr>
+          <td>Fatema Khatun</td>
+          <td>2025002</td>
+          <td>EEE</td>
+          <td>3rd</td>
+          <td>fatema@example.com</td>
+          <td>Female</td>
+          <td>2003-02-10</td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="main.js"></script>
+  </body>
+</html>
